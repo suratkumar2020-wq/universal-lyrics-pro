@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Universal Lyrics Pro
 
 ## Setup
@@ -12,3 +13,6 @@
 - Hinglish Transliteration
 - Dynamic Theme Switching
 - Mock Database (In-memory)
+=======
+# universal-lyrics-pro
+>>>>>>> 6aa6cfab2967a5f6c87d7d0e3514df196d04d284
