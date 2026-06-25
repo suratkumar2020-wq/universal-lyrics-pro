@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary-base: #1db954;
+  --color-on-primary: #ffffff;
+  --color-background: #131313;
+  --color-surface: #1e1e1e;
+  --color-surface-container: #282828;
+  --color-surface-container-low: #181818;
+  --color-primary-container: #1db954;
+  --color-primary-fixed: #53e076;
+  --color-tertiary: #52d9de;
+
+  --spacing-container-padding: 16px;
+  --spacing-stack-gap: 12px;
+  --spacing-inline-gap: 8px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-zinc-100;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-zinc-900/60 backdrop-blur-xl border border-white/5 shadow-2xl;
+  }
+  .app-shadow {
+    @apply shadow-2xl shadow-black/50 border border-white/5;
+  }
+  .active-lyric-glow {
+    @apply text-primary-fixed;
+    text-shadow: 0 0 20px rgba(83, 224, 118, 0.4);
+  }
+  .spotify-glow {
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.3);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(37, 99, 235, 0.2);
+  border-radius: 10px;
+}
